@@ -1,0 +1,11 @@
+.main-picture img {
+    height: 70px;
+}
+
+main, section, article, aside, footer, header, nav, hgroup {
+    display: block;
+}
+
+.aside-section {
+    color: blue;
+}
