@@ -1,11 +1,117 @@
-.main-picture img {
-    height: 70px;
-}
-
 main, section, article, aside, footer, header, nav, hgroup {
     display: block;
 }
 
+header {
+    background-color: rgb(103, 97, 256); 
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.main-picture img {
+    width: 10%;
+    max-width: 30%;
+}
+
+figure img {
+    max-width: 75%;
+    width: 50%;
+}    
+
 .aside-section {
     color: blue;
+    /*padding: 2em;*/
+    /*padding-left: 2em;*/
+    padding-top: 3rem;
+    padding-right: 0;
+    padding-bottom: 3rem;
+    background: rgb(166,229,210);
+    width: 100%;
+}
+
+#mypicture {
+    width: 500px;    
+    margin: 50px
+}
+
+nav ul {
+    padding-top: 1.5rem;
+    list-style: none;
+    float:left;
+}
+
+nav ul li {
+    float: left;
+    padding:1em;
+    font-size: 1em;
+}
+
+.main-picture {
+    margin-right: 3em;
+}
+
+@media print {
+    body, header, main, aside, section, article, .aside-section {
+        background-color: white;
+        color: black;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    article h1 {
+        text-decoration: underline;
+    }
+    #mypicture {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        float: left;
+        width: 60%;
+        max-width: 100%;
+    }
+    aside {
+        float: left;
+        width: 30%;
+        padding: 3rem;
+        /*padding-right: 6.35rem;*/
+    }    
+    .main-picture {
+        float: left;
+    }
+    .clearfix {
+        float: left;
+        width: 100%;
+    }
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    figure {
+        width: 50%;
+    }
+    
+    figure img {
+    max-width: 100%;
+    width: 100%;
+    }
+
+    header {
+        clear: both;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .aside-section {
+        padding-right: 0;
+        max-width: 93.5%;
+
+    }
 }
