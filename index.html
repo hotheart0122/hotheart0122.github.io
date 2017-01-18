@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Surface Pro4 Review </title>
+    <title> Welcome to Beginner' Newsroom </title>
     <link href="/css/styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-<header class="clearfix">
-    <h1>Kevin's Tech News</h1>
-    <nav>
-        <div class="main-picture">
-            <a href="/about.html"><img src="/images/me-880.jpg" alt="reviewer picture"> </a>
-        </div>
+<header class="head-clearfix">
+    
+    <div class="theme-picture">
+        <!--<div class="theme-picture" style:"background-image: url(/images/theme-large.jpg)">-->
+            <source media="(min-width: 500px)" srcset="/images/theme-medium.jpg, /images/theme-large.jpg 2x">
+            <source media="(min-width: 450px)" srcset="/images/theme-small.jpg, /images/theme-medium.jpg 2x">
+            <source media="(max-width: 400px)" srcset="/images/theme-mini.jpg, /images/theme-small.jpg 2x">
+            <img src="/images/theme-large.jpg">
+    <!--</div>-->
+    <nav class="head-nav"> 
+        <h1> Welcome Beginners!</h1>
         <ul>
-            <li><a href="/"> Home </a></li>
-            <li><a href="/page2.html"> Page2 </a></li>
-            <li><a href="/about.html"> About me </a></li>
+            <li><a href="/"> HOME </a></li>
+            <li><a href="/projects.html"> PROJECTS </a></li>
+            <li><a href="/about.html"> ABOUT </a></li>
+            <li><a href="/resources.html"> RESOURCES </a> </li> 
         </ul>
     </nav>
+    </div>
 </header>
-  <div class="wrapper clearfix" >
+
+  <div class="wrapper1 clearfix" >
     <main>
-        <h1>My Surface Pro4 Review</h1>
+        <h1>To People Considering Career Change to Developers </h1>
         <article>
-            <figure>
-                <img src="/images/surfacepro4.jpg" alt="surface pro4">
-                <figcaption> Surface Pro4 
-                </figcaption>            
-            </figure>
-            <h1> Pros </h1>
-            <p>
-                Nulla maximus gravida lorem et molestie. Proin at tincidunt enim. Vestibulum dolor nisl, fermentum sit amet justo at, fermentum suscipit augue. Donec condimentum, purus ut dignissim rutrum, nulla massa porta lorem, eu faucibus leo dui eget nulla. Aenean sit amet tellus id mauris ornare laoreet eget vel felis. Suspendisse potenti. Phasellus aliquam suscipit dignissim. Maecenas aliquet ornare felis, id blandit ipsum finibus in. Vestibulum blandit fringilla eros, non auctor ante vestibulum quis. Etiam efficitur venenatis dolor, vitae euismod velit. Nam ullamcorper venenatis pulvinar. Nulla non metus lectus. Nulla ut gravida lorem. Suspendisse malesuada volutpat velit ut gravida. Nulla sapien velit, porta nec condimentum ac, euismod in urna.
+            <p> I am taking a full stack web developers class at a bootcamp in Atlanta. Before I decided to do this, I was an attorney licensed in New York, New Jersey.
+                I am still licensed, but I do not think I am going to practice law any more. 
+                I did not know anything about programming before I took this class. I was like a baby in front of a computer.
             </p>
+            <figure>
+                <img src="/images/baby.jpg" alt="baby">
+            </figure>
+           
+            <p> I am still a beginner, and there are not so many things I can do, most of the time I am like this. </p>
+             <figure>
+                <img src="/images/sad.jpg" alt="frustrated">
+             </figure>
+
+            <p> But sometimes, when I fixed an error, I am like this.
+              <figure>
+                <img src="/images/happy.jpg" alt="yeah~!">
+             </figure>
         </article>
+
         <article>
-            <h1> Cons </h1>
+            <h1> What should we learn as a beginner? </h1>
             <p>
-                Donec bibendum, sapien et auctor molestie, sem ante congue ex, iaculis aliquet leo mi in nulla. Suspendisse feugiat, magna vitae pulvinar rutrum, arcu dui tincidunt urna, vel malesuada justo dolor rutrum velit. Nam id sapien mattis, tincidunt dolor in, malesuada nulla. Quisque dapibus sapien at tempus semper. Pellentesque a odio rutrum lorem efficitur gravida ornare non nibh. Donec eget pretium quam, ac tristique libero. Aliquam erat volutpat. Proin sed pretium risus, at rhoncus velit.
+                 JavaScript. It is the only lanuguage that runs in browsers. As a web developer, JavaScript is a basic, and a must.
             </p>
 
+            <h1> What programms do I need to begin programming? </h1>
+            <p> Text Editor: To write source code, you need a text editor. There are many good text editors you can choose,
+                but I use Visual Studio Code. You can download VSC <a href="http://code.visualstudio.com/?wt.mc_id=DX_573435&utm_source=google&utm_medium=paid&utm_content=1&utm_campaign=Corp-FY16Q3March-Dev-PJVS&gclid=Cj0KEQiA-_HDBRD2lomhoufc1JkBEiQA0TVMmg2ZCpvVMtTiqW6jgzXHLlg3gW6aXJENyFvZmO4ogecaAjxH8P8HAQ"> here. </a> </p> 
+
+            <p> With the Visual Studio Code, you can write a code and push it to github.  
+            <figure>
+              <img src="/images/vsc.png">
+            </figure>   
         </article>
     </main>
-        
+  </div>
+
+  <div class="wrapper2 clearfix">   
     <aside>
         <section class="aside-section"> 
-        <h1> Aside </h1>
-        <h1>Surface Pro4 Accessories </h1>
-            <p> Go to <a href="/page2.html"> Page2 </a> </p>
+        <h2> Recent Posts </h2>
+        <h2> Popular Posts </h2>   
         </section>
     </aside>
   </div>
+
 <footer>
     <p>
         <small>
-            Review by Kevin. 
+            Written by Kevin, 2017
         </small>
     </p>
 </footer>
