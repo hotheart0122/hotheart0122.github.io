@@ -1,76 +1,98 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title> Welcome to Beginner' Newsroom </title>
-    <link href="/css/styles.css" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <title> Welcome to Beginner' Newsroom </title>
+    <!--<link href="/theme/css/creative.min.css" rel="stylesheet">-->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+  </head>
 
-<body>
-<header class="head-clearfix">
+  <body>
+    <header>
     
-    <div class="theme-picture">
-        <!--<div class="theme-picture" style:"background-image: url(/images/theme-large.jpg)">-->
+      <div class="container-fluid">
         <picture>
             <source media="(min-width: 500px)" srcset="/images/theme-medium.jpg, /images/theme-large2.jpg 2x">
             <source media="(min-width: 450px)" srcset="/images/theme-small.jpg, /images/theme-medium.jpg 2x">
             <source media="(max-width: 400px)" srcset="/images/theme-mini.jpg, /images/theme-small.jpg 2x">
-            <img src="/images/theme-large.jpg">
+            <img src="/images/theme-large.jpg" class="img-responsive img-thumbnail">
         </picture>
-    <!--</div>-->
-    <nav class="head-nav"> 
-        <h1> Welcome Beginners!</h1>
-        <ul>
-            <li><a href="/"> HOME </a></li>
-            <li><a href="/projects.html"> PROJECTS </a></li>
-            <li><a href="/about.html"> ABOUT </a></li>
-            <li><a href="/resources.html"> RESOURCES </a> </li> 
-        </ul>
-    </nav>
-    </div>
-</header>
+      </div>
+   
+     <nav class="navbar navbar-default">
+       <div class="container-fluid bg-info">
+         <div class="navbar-header">
+           <!-- Put Button Here  -->    
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-links" aria-expanded="false">
+             <!--Toggle-->
+               <span class="sr-only">Toggle Navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             <!-- Put Logo Here  -->
+             <!--<a class="navbar-brand" href="/">
+             <img src="/img/cca-logo-column-only-tiny.png" alt="cca logo">CCA</a>-->
+         </div>
+         <div class="collapse navbar-collapse" id="main-nav-links">
+           <ul class="nav navbar-nav">
+             <li role="presentation"><a href="/"> HOME </a></li>
+             <li role="presentation" ><a href="/projects.html"> PROJECTS </a></li>
+             <li role="presentation"><a href="/about.html"> ABOUT </a></li>
+             <li role="presentation" class="active"><a href="/resources.html"> RESOURCES </a> </li>
+             <!--<li class="active"><a href="/">Home</a></li>
+             <li><a href="#">Page 2</a></li>-->
+           </ul>
+          </div>
+        </div>
+     </nav>
+  </header>
 
-  <div class="wrapper1 clearfix" >
-    <main>
-        <h1>Here are some useful resources developers can always refer to </h1>
-        <article>
-            <ul class="resource">
-              <p> Need some online courses? Here it is! </p>
-              <li> <a href="https://www.pluralsight.com/"> https://www.pluralsight.com </li> 
-              <li> <a href="https://www.codecademy.com"> https://www.codecademy.com </a> </li> 
-              <li> <a href="https://www.coursera.org/"> https://www.coursera.org/ </a> </li>
+  <div class="container" >
+      <div class="col-xl-9 col-md-9 col-sm-9">
+         <main>
+            <h1>Here are some useful resources developers can always refer to </h1>
+            <article>
+                <ul class="resource">
+                     <h3> Need some online courses? Here it is! </h3>
+                         <li> <a href="https://www.pluralsight.com/"> https://www.pluralsight.com </li> 
+                         <li> <a href="https://www.codecademy.com"> https://www.codecademy.com </a> </li> 
+                         <li> <a href="https://www.coursera.org/"> https://www.coursera.org/ </a> </li>
 
-              <p> Need some reference? Here it is! </p>
-              <li> <a href="https://developer.mozilla.org"> https://developer.mozilla.org </a> </li>
-              <li> <a href="https://www.w3.org/TR"> https://www.w3.org/TR </a> </li>
-              <li> <a href="http://caniuse.com"> http://caniuse.com </a> </li>
-              <li> <a href="https://css-tricks.com/complete-guide-table-element">https://css-tricks.com/complete-guide-table-element </a> </li>
-              <li> <a href="https://www.npmjs.com/package/http-server"> https://www.npmjs.com/package/http-server </a> </li>
-              <p> Need some CSS design? Here it is! </p>
-              <li> <a href="http://www.csszengarden.com"> http://www.csszengarden.com </a> </li>
+                     <h3> Need some reference? Here it is! </h3>
+                         <li> <a href="https://developer.mozilla.org"> https://developer.mozilla.org </a> </li>
+                         <li> <a href="https://www.w3.org/TR"> https://www.w3.org/TR </a> </li>
+                         <li> <a href="http://caniuse.com"> http://caniuse.com </a> </li>
+                         <li> <a href="https://css-tricks.com/complete-guide-table-element">https://css-tricks.com/complete-guide-table-element </a> </li>
+                         <li> <a href="https://www.npmjs.com/package/http-server"> https://www.npmjs.com/package/http-server </a> </li>
+                     <h3> Need some CSS design? Here it is! </h3>
+                         <li> <a href="http://www.csszengarden.com"> http://www.csszengarden.com </a> </li>
              
-              <p> Need some color? Here it is! </p>
-              <li> <a href="https://color.adobe.com"> https://color.adobe.com </a></li>
-              <p> Need some latin language? Here it is! </p>
-              <li> <a href="http://www.lipsum.com"> http://www.lipsum.com </a> </li>
+                     <h3> Need some color? Here it is! </h3>
+                         <li> <a href="https://color.adobe.com"> https://color.adobe.com </a></li>
+                     <h3> Need some latin language? Here it is! </h3>
+                         <li> <a href="http://www.lipsum.com"> http://www.lipsum.com </a> </li>
               
-              <p> Need some fonts? Here it is! </p>
-              <li> <a href="https://fonts.google.com"> https://fonts.google.com </li>
-              <li> <a href="https://edgewebfonts.adobe.com"> https://edgewebfonts.adobe.com </a> </li>
-              <li> <a href="https://typekit.com"> https://typekit.com </a> </li>
+                     <h3> Need some fonts? Here it is! </h3>
+                         <li> <a href="https://fonts.google.com"> https://fonts.google.com </li>
+                         <li> <a href="https://edgewebfonts.adobe.com"> https://edgewebfonts.adobe.com </a> </li>
+                         <li> <a href="https://typekit.com"> https://typekit.com </a> </li>
               
-              <p> Need some source control? Here it is! </p>
-              <li> <a href="https://pages.github.com"> https://pages.github.com </a> </li>
+                     <h3> Need some source control? Here it is! </h3>
+                         <li> <a href="https://pages.github.com"> https://pages.github.com </a> </li>
 
-              <p> Need some clouds? Here it is! </p>
-              <li> <a href="https://www.digitalocean.com"> https://www.digitalocean.com </a> </li>
-              <li> <a href="https://azure.microsoft.com"> https://azure.microsoft.com </a> </li>
-            </ul>
-        </article>
-    </main>
-  </div>
+                     <h3> Need some clouds? Here it is! </h3>
+                         <li> <a href="https://www.digitalocean.com"> https://www.digitalocean.com </a> </li>
+                         <li> <a href="https://azure.microsoft.com"> https://azure.microsoft.com </a> </li>
+                   </ul>
+              </article>
+         </main>
+      </div>
+  
 
-  <div class="wrapper2 clearfix">   
+  <div class="col-xl-3 col-md-3 col-sm-3 bg-primary wrapper2 clearfix">   
     <aside>
         <section class="aside-section"> 
         <h2> Recent Posts </h2>
@@ -78,13 +100,17 @@
         </section>
     </aside>
   </div>
+</div>
 
-<footer>
-    <p>
+   <footer class="footer">
+      <div class="col-xs-offset-2">
         <small>
-            Written by Kevin, 2017
+           <strong><em> &copy Kevin Hwangi Kim, 2017 </strong></em>
         </small>
-    </p>
-</footer>
+      </div>
+    </footer>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
