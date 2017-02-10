@@ -1,77 +1,98 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title> Welcome to Beginner' Newsroom </title>
-    <link href="/css/styles.css" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <title> Welcome to Beginner' Newsroom </title>
+    <!--<link href="/theme/css/creative.min.css" rel="stylesheet">-->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+  </head>
 
-<body>
-<header class="head-clearfix">
+  <body>
+    <header>
     
-    <div class="theme-picture">
-        <!--<div class="theme-picture" style:"background-image: url(/images/theme-large.jpg)">-->
-           <picture>
+      <div class="container-fluid">
+        <picture>
             <source media="(min-width: 500px)" srcset="/images/theme-medium.jpg, /images/theme-large2.jpg 2x">
             <source media="(min-width: 450px)" srcset="/images/theme-small.jpg, /images/theme-medium.jpg 2x">
             <source media="(max-width: 400px)" srcset="/images/theme-mini.jpg, /images/theme-small.jpg 2x">
-            <img src="/images/theme-large.jpg">
-           </picture>
-    <!--</div>-->
-    <nav class="head-nav"> 
-        <h1> Welcome Beginners!</h1>
-        <ul>
-            <li><a href="/"> HOME </a></li>
-            <li><a href="/projects.html"> PROJECTS </a></li>
-            <li><a href="/about.html"> ABOUT </a></li>
-            <li><a href="/resources.html"> RESOURCES </a> </li> 
-        </ul>
-    </nav>
-    </div>
-</header>
+            <img src="/images/theme-large.jpg" class="img-responsive img-thumbnail">
+        </picture>
+      </div>
+   
+     <nav class="navbar navbar-default">
+       <div class="container-fluid bg-info">
+         <div class="navbar-header">
+           <!-- Put Button Here  -->    
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-links" aria-expanded="false">
+             <!--Toggle-->
+               <span class="sr-only">Toggle Navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             <!-- Put Logo Here  -->
+             <!--<a class="navbar-brand" href="/">
+             <img src="/img/cca-logo-column-only-tiny.png" alt="cca logo">CCA</a>-->
+         </div>
+         <div class="collapse navbar-collapse" id="main-nav-links">
+           <ul class="nav navbar-nav">
+             <li role="presentation" class="active"><a href="/"> HOME </a></li>
+             <li role="presentation"><a href="/projects.html"> PROJECTS </a></li>
+             <li role="presentation"><a href="/about.html"> ABOUT </a></li>
+             <li role="presentation"><a href="/resources.html"> RESOURCES </a> </li>
+             <!--<li class="active"><a href="/">Home</a></li>
+             <li><a href="#">Page 2</a></li>-->
+           </ul>
+          </div>
+        </div>
+     </nav>
+  </header>
 
-  <div class="wrapper1 clearfix" >
-    <main>
-        <h1>To People Considering Career Change to Developers </h1>
-        <article>
-            <p> I am taking a full stack web developers class at a bootcamp in Atlanta. Before I decided to do this, I was an attorney licensed in New York, New Jersey.
-                I am still licensed, but I do not think I am going to practice law any more. 
-                I did not know anything about programming before I took this class. I was like a baby in front of a computer.
-            </p>
-            <figure>
-                <img src="/images/baby.jpg" alt="baby">
-            </figure>
+  <div class="container" >
+      <div class="col-xl-9 col-md-9 col-sm-9">
+
+             <main>
+                 <h1>To People Considering Career Change to Developers </h1>
+                     <article>
+                       <p> I am taking a full stack web developers class at a bootcamp in Atlanta. Before I decided to do this, I was an attorney licensed in New York, New Jersey.
+                           I am still licensed, but I do not think I am going to practice law any more. 
+                           I did not know anything about programming before I took this class. I was like a baby in front of a computer.
+                       </p>
+                           <figure>
+                             <img src="/images/baby.jpg" class="img-responsive img-thumbnail" alt="baby">
+                            </figure>
            
-            <p> I am still a beginner, and there are not so many things I can do, most of the time I am like this. </p>
-             <figure>
-                <img src="/images/sad.jpg" alt="frustrated">
-             </figure>
+                       <p> I am still a beginner, and there are not so many things I can do, most of the time I am like this. </p>
+                           <figure>
+                                <img src="/images/sad.jpg" class="img-responsive img-thumbnail" alt="frustrated">
+                           </figure>
 
-            <p> But sometimes, when I fixed an error, I am like this.
-              <figure>
-                <img src="/images/happy.jpg" alt="yeah~!">
-             </figure>
-        </article>
+                       <p> But sometimes, when I fixed an error, I am like this.
+                            <figure>
+                                <img src="/images/happy.jpg" class="img-responsive img-thumbnail" alt="yeah~!">
+                            </figure>
+                     </article>
 
-        <article>
-            <h1> What should we learn as a beginner? </h1>
-            <p>
-                 JavaScript. It is the only lanuguage that runs in browsers. As a web developer, JavaScript is a basic, and a must.
-            </p>
+                     <article>
+                        <h1> What should we learn as a beginner? </h1>
+                            <p>
+                                JavaScript. It is the only lanuguage that runs in browsers. As a web developer, JavaScript is a basic, and a must.
+                            </p>
 
-            <h1> What programms do I need to begin programming? </h1>
-            <p> Text Editor: To write source code, you need a text editor. There are many good text editors you can choose,
-                but I use Visual Studio Code. You can download VSC <a href="http://code.visualstudio.com/?wt.mc_id=DX_573435&utm_source=google&utm_medium=paid&utm_content=1&utm_campaign=Corp-FY16Q3March-Dev-PJVS&gclid=Cj0KEQiA-_HDBRD2lomhoufc1JkBEiQA0TVMmg2ZCpvVMtTiqW6jgzXHLlg3gW6aXJENyFvZmO4ogecaAjxH8P8HAQ"> here. </a> </p> 
+                        <h1> What programms do I need to begin programming? </h1>
+                            <p> Text Editor: To write source code, you need a text editor. There are many good text editors you can choose,
+                                but I use Visual Studio Code. You can download VSC <a href="http://code.visualstudio.com/?wt.mc_id=DX_573435&utm_source=google&utm_medium=paid&utm_content=1&utm_campaign=Corp-FY16Q3March-Dev-PJVS&gclid=Cj0KEQiA-_HDBRD2lomhoufc1JkBEiQA0TVMmg2ZCpvVMtTiqW6jgzXHLlg3gW6aXJENyFvZmO4ogecaAjxH8P8HAQ"> here. </a> </p> 
 
-            <p> With the Visual Studio Code, you can write a code and push it to github.  
-            <figure>
-              <img src="/images/vsc.png">
-            </figure>   
-        </article>
-    </main>
-  </div>
-
-  <div class="wrapper2 clearfix">   
+                            <p> With the Visual Studio Code, you can write a code and push it to github.  
+                                <figure>
+                                    <img src="/images/vsc.png" class="img-responsive img-thumbnail">
+                                </figure>   
+                     </article>
+                </main>
+            </div>
+  <div class="col-xl-3 col-md-3 col-sm-3 bg-primary clearfix">   
     <aside>
         <section class="aside-section"> 
         <h2> Recent Posts </h2>
@@ -79,13 +100,16 @@
         </section>
     </aside>
   </div>
+</div>
 
-<footer>
-    <p>
+    <footer class="footer">
+      <div class="col-xs-offset-2">
         <small>
-            Written by Kevin, 2017
+           <strong><em> &copy Kevin Hwangi Kim, 2017 </strong></em>
         </small>
-    </p>
-</footer>
-</body>
+      </div>
+    </footer>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="/js/bootstrap.min.js"></script>
+  </body>
 </html>

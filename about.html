@@ -1,55 +1,78 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title> Welcome to Beginner' Newsroom </title>
-    <link href="/css/styles.css" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <title> Welcome to Beginner' Newsroom </title>
+    <!--<link href="/theme/css/creative.min.css" rel="stylesheet">-->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+  </head>
 
-<body>
-<header class="head-clearfix">
+  <body>
+    <header>
     
-    <div class="theme-picture">
-        <!--<div class="theme-picture" style:"background-image: url(/images/theme-large.jpg)">-->
+      <div class="container-fluid">
         <picture>
             <source media="(min-width: 500px)" srcset="/images/theme-medium.jpg, /images/theme-large2.jpg 2x">
             <source media="(min-width: 450px)" srcset="/images/theme-small.jpg, /images/theme-medium.jpg 2x">
             <source media="(max-width: 400px)" srcset="/images/theme-mini.jpg, /images/theme-small.jpg 2x">
-            <img src="/images/theme-large.jpg">
+            <img src="/images/theme-large.jpg" class="img-responsive img-thumbnail">
         </picture>
-    <!--</div>-->
-    <nav class="head-nav"> 
-        <h1> Welcome Beginners!</h1>
-        <ul>
-            <li><a href="/"> HOME </a></li>
-            <li><a href="/projects.html"> PROJECTS </a></li>
-            <li><a href="/about.html"> ABOUT </a></li>
-            <li><a href="/resources.html"> RESOURCES </a> </li> 
-        </ul>
-    </nav>
+      </div>
+   
+     <nav class="navbar navbar-default">
+       <div class="container-fluid bg-info">
+         <div class="navbar-header">
+           <!-- Put Button Here  -->    
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-links" aria-expanded="false">
+             <!--Toggle-->
+               <span class="sr-only">Toggle Navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             <!-- Put Logo Here  -->
+             <!--<a class="navbar-brand" href="/">
+             <img src="/img/cca-logo-column-only-tiny.png" alt="cca logo">CCA</a>-->
+         </div>
+         <div class="collapse navbar-collapse" id="main-nav-links">
+           <ul class="nav navbar-nav">
+             <li role="presentation"><a href="/"> HOME </a></li>
+             <li role="presentation" ><a href="/projects.html"> PROJECTS </a></li>
+             <li role="presentation" class="active"><a href="/about.html"> ABOUT </a></li>
+             <li role="presentation"><a href="/resources.html"> RESOURCES </a> </li>
+             <!--<li class="active"><a href="/">Home</a></li>
+             <li><a href="#">Page 2</a></li>-->
+           </ul>
+          </div>
+        </div>
+     </nav>
+  </header>
+
+  <div class="container">
+    <div class="col-xl-9 col-md-9 col-sm-9">
+    
+        <main>
+            <h1>About me </h1>
+            <article>
+                <p> I studied law in my country, South Korea. (Yonsei University)
+                    I went to law school in U.S. too. (Washington University in St. Louis)
+                    I practiced law in a small law firm in New York and Atlanta, GA.
+                    While I was practicing law, I thought about doing a different thing. Practing law was full of stress. I also 
+                    found out that I am not so good at dealing with people.
+                    Furthermore, I read articles about artificial intelligence everyday. Someday, AI will replace human attorneys.
+
+                    After I quit, I decided to dive into software industries. 
+                    I am still learning, but everyday my life is full of fun. Learning new things is not like studyingk but more like
+                    playing. I can create new things with my own hand, on my laptop.
+                </p>
+            </article>
+        </main>
     </div>
-</header>
+  
 
-  <div class="wrapper1 clearfix" >
-    <main>
-        <h1>About me </h1>
-        <article>
-            <p> I studied law in my country, South Korea. (Yonsei University)
-                I went to law school in U.S. too. (Washington University in St. Louis)
-                I practiced law in a small law firm in New York and Atlanta, GA.
-                While I was practicing law, I thought about doing a different thing. Practing law was full of stress. I also 
-                found out that I am not so good at dealing with people.
-                Furthermore, I read articles about artificial intelligence everyday. Someday, AI will replace human attorneys.
-
-                After I quit, I decided to dive into software industries. 
-                I am still learning, but everyday my life is full of fun. Learning new things is not like studyingk but more like
-                playing. I can create new things with my own hand, on my laptop.
-            </p>
-        </article>
-    </main>
-  </div>
-
-  <div class="wrapper2 clearfix">   
+  <div class="col-xl-3 col-md-3 col-sm-3 bg-primary">   
     <aside>
         <section class="aside-section"> 
         <h2> Recent Posts </h2>
@@ -57,13 +80,17 @@
         </section>
     </aside>
   </div>
+</div>
 
-<footer>
-    <p>
+   <footer class="footer">
+      <div class="col-xs-offset-2">
         <small>
-            Written by Kevin, 2017
+           <strong><em> &copy Kevin Hwangi Kim, 2017 </strong></em>
         </small>
-    </p>
-</footer>
+      </div>
+    </footer>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
